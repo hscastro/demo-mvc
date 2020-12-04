@@ -10,9 +10,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "CARGOS")
-@SuppressWarnings("serial")
 public class Cargo extends AbstractEntity<Long> {
 
 	@Column(name = "nome", nullable = false, unique = true, length = 60)

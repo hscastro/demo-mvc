@@ -10,7 +10,7 @@ import br.ce.hscastro.dao.FuncionarioDao;
 import br.ce.hscastro.domain.Funcionario;
 
 @Service @Transactional(readOnly = true)
-public class FuncionarioDaoImpl implements FuncionarioService {
+public class FuncionarioServiceImpl implements FuncionarioService {
 
 	@Autowired
 	private FuncionarioDao dao;

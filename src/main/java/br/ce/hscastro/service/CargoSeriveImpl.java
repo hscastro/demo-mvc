@@ -10,7 +10,7 @@ import br.ce.hscastro.dao.CargoDao;
 import br.ce.hscastro.domain.Cargo;
 
 @Service  @Transactional(readOnly = false)
-public class CargoDaoImpl implements CargoService {
+public class CargoSeriveImpl implements CargoService {
 	
 	@SuppressWarnings("unused")
 	@Autowired

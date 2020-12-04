@@ -10,7 +10,7 @@ import br.ce.hscastro.dao.DepartamentoDao;
 import br.ce.hscastro.domain.Departamento;
 
 @Service
-public class DepartamentoDaoImpl implements DepartamentoService {
+public class DepartamentoServiceImpl implements DepartamentoService {
 
 	@SuppressWarnings("unused")
 	@Autowired
