@@ -64,6 +64,7 @@ public class CargoController {
 		return "redirect:/cargos/listar";
 	}	
 
+	
 	@GetMapping("/listar")
 	public String listar(ModelMap model) {
 		model.addAttribute("cargos", cargoService.buscarTodos());

@@ -23,18 +23,18 @@ public class DepartamentoController {
 	public String cadastrar(Departamento departamento) {
 		return "/departamento/cadastro";
 	}
-	
-	@GetMapping("/listar")
-	public String listar(ModelMap model) {
-		model.addAttribute("departamentos", service.buscarTodos());
-		return "/departamento/lista";
-	}
-	
+
 	@PostMapping("/salvar")
 	public String salvar(Departamento departamento, RedirectAttributes attr) {
 		service.salvar(departamento);
 		attr.addFlashAttribute("success", "Departamento inserido com sucesso.");
 		return "redirect:/departamentos/cadastrar";
+	}
+	
+	@GetMapping("/listar")
+	public String listar(ModelMap model) {
+		model.addAttribute("departamentos", service.buscarTodos());
+		return "/departamento/lista";
 	}
 	
 	@GetMapping("/editar/{id}")
