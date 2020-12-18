@@ -1,5 +1,7 @@
 package br.ce.hscastro.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -33,9 +35,10 @@ public class DepartamentoController {
 	
 	@GetMapping("/listar")
 	public String listar(ModelMap model) {
-		model.addAttribute("departamentos", service.buscarTodos());
+		model.addAttribute("departamentos",  service.buscarTodos());
 		return "/departamento/lista";
 	}
+
 	
 	@GetMapping("/editar/{id}")
 	public String preEditar(@PathVariable("id") Long id, ModelMap model) {
