@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.desenvolvimento.hscastro.curso</groupId>
-	<artifactId>demo-mvc</artifactId>
+	<artifactId>projeto-java-spring-boot-thymeleaf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo-mvc</name>
-	<description>projeto demo-mvc com Spring Boot</description>
+	<description>projeto java web com spring boot e thymeleaf</description>
 
 	<properties>
 		<java.version>1.8</java.version>
