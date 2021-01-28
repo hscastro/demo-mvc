@@ -4,19 +4,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import br.ce.desen.domain.Cargo;
-import br.ce.desen.service.CargoService;
+import br.ce.desen.domain.Livro;
+import br.ce.desen.service.LivroService;
 
 
 @Component
-public class StringToCargoConverter implements Converter<String, Cargo> {
+public class StringToCargoConverter implements Converter<String, Livro> {
 
 	@Autowired
-	private CargoService service;
+	private LivroService service;
 	
 	
 	@Override
-	public Cargo convert(String text) {
+	public Livro convert(String text) {
 		if(text.isEmpty()) {
 			return null;
 		}

@@ -28,14 +28,14 @@ public class Categoria extends AbstractEntity<Long> {
 		this.nome = nome;
 	}
 	
-	@OneToMany(mappedBy = "departamento")
-	private List<Cargo> cargos;
+	@OneToMany(mappedBy = "categoria")
+	private List<Livro> livros;
 
-	public List<Cargo> getCargos() {
-		return cargos;
+	public List<Livro> getLivros() {
+		return livros;
 	}
 
-	public void setCargos(List<Cargo> cargos) {
-		this.cargos = cargos;
+	public void setCargos(List<Livro> livros) {
+		this.livros = livros;
 	}
 }

@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import br.ce.desen.domain.Cargo;
+import br.ce.desen.domain.Livro;
 import br.ce.desen.domain.Funcionario;
 import br.ce.desen.domain.Uf;
-import br.ce.desen.service.CargoService;
+import br.ce.desen.service.LivroService;
 import br.ce.desen.service.FuncionarioService;
 
 @Controller
@@ -27,7 +27,7 @@ public class FuncionarioController {
 	private FuncionarioService funcionarioService;
 	
 	@Autowired
-	private CargoService cargoService;
+	private LivroService cargoService;
 
 	@GetMapping("/cadastrar")
 	public String cadastrar(Funcionario funcionario) {
@@ -62,7 +62,7 @@ public class FuncionarioController {
 	}
 	
 	@ModelAttribute("cargos")
-	public List<Cargo> getCargos() {
+	public List<Livro> getCargos() {
 		return cargoService.buscarTodos();
 	}	
 	

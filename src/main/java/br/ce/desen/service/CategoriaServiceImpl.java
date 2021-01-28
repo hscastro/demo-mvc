@@ -57,7 +57,7 @@ public class CategoriaServiceImpl implements CategoriaService {
 
 	@Override
 	public boolean departamentoTemCargo(Long id) {
-		if(buscarPorId(id).getCargos().isEmpty()) {
+		if(buscarPorId(id).getLivros().isEmpty()) {
 			return false;
 		}
 		return true;
