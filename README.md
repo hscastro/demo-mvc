@@ -15,3 +15,4 @@ A api usa java e mySQL no banc-end e o framework thymeleaf no front-end.
 4 - Delete (excluir); <br/>
 
 Obs: Essas operações foram feitas em cima das entidades (Departamento, cargo e funcionário), usando alguns padrões de projeto como DAO (Data Access Object).
+# projeto-livraria
