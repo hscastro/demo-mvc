@@ -17,6 +17,9 @@ import br.ce.hscastro.domain.Departamento;
 import br.ce.hscastro.service.CargoService;
 import br.ce.hscastro.service.DepartamentoService;
 
+//desenvolvedor: Antonio Halyson
+//email: halisonsc5@gmail.com
+
 @Controller
 @RequestMapping("/cargos")
 public class CargoController {
